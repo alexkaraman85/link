@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   app: {
-    port: 8080,
+    port: process.env.PORT || 8080,
     templates: {
       views: path.join(process.cwd(), 'src/pages'),
       extname: ".hbs",
